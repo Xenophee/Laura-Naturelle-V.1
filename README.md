@@ -5,7 +5,11 @@
 
 ## Description du projet
 
-Site vitrine professionnel pour L’Aura Natur’elle, une entreprise individuelle d’esthétique située à Saint-Quentin (02). L’objectif du projet est d’offrir une réelle visibilité de l’entreprise sur le web.
+Site vitrine professionnel pour L’Aura Natur’elle, une entreprise individuelle d’esthétique située à Saint-Quentin (02). L’objectif du projet était d’offrir une réelle visibilité de l’entreprise sur le web.
+
+> [!IMPORTANT]
+> Le repository est désormais public, puisque le projet a été abandonné.
+
 
 Pour en savoir plus, vous pouvez consulter la page de mon [portfolio](https://perrine-dassonville.dev/portfolio/projet/laura-naturelle-v1) dédiée au projet.
 
