@@ -153,25 +153,6 @@
 
         <div class="split-index"></div>
 
-
-        <!-- ========================================================================================================================================================================== -->
-        <!-- PARTIE AVIS -->
-
-        <section class="section-index py-3 py-md-5">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <h2 class="category-title text-center py-4 px-3 my-2">Avis clients</h2>
-            </div>
-
-            <div class="row justify-content-center justify-content-xl-evenly mx-0 mt-5 py-xl-5">
-                <div class="col-12 col-md-9 col-xl-7 py-md-5 d-flex justify-content-center align-items-center">
-                    <div class="elfsight-app-681d973a-e7bc-4007-9e36-e676a85cfcd0" data-elfsight-app-lazy></div>
-                </div>
-            </div>
-        </section>
-
-        <div class="split-index"></div>
-
-
         <!-- ========================================================================================================================================================================== -->
         <!-- PARTIE EMPLACEMENT -->
 
