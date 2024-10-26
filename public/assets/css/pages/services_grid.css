@@ -1,0 +1,191 @@
+
+
+
+
+
+/* -------------------------------------------- */
+/* GRANDE IMAGE */
+
+.service-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* -------------------------------------------- */
+/* CARTE PRESTATION - TEXTE */
+
+.service {
+    box-shadow: var(--box-light-shadow);
+}
+
+.new-service, .not-published, .deactivated {
+    height: 25px;
+    font-size: 1.1rem;
+    font-family: var(--special-font);
+}
+
+.new-service {
+    background-color: var(--gold-color);
+    color: var(--main-color);
+}
+
+.not-published {
+    background-color: var(--first-color);
+    color: var(--main-color);
+}
+
+.deactivated {
+    background-color: var(--beige-color);
+    color: var(--main-dark-color);
+}
+
+
+.special-service {
+    background-color: var(--special-dark-color);
+    color: var(--main-color);
+    height: 25px;
+    font-size: 1rem;
+    font-family: var(--special-font);
+}
+
+.service p {
+    margin: 0;
+}
+
+
+/* -------------------------------------------- */
+/* CARTE PRESTATION - BADGES */
+
+.time-badge-grid,
+.price-badge-grid {
+    width: 100%;
+}
+
+.time-badge-grid-min,
+.price-badge-grid-min {
+    width: 100%;
+}
+
+.price.discount {
+    color: var(--special-dark-color);
+}
+
+.price span {
+    color: var(--second-color);
+}
+
+.div-badges {
+    width: 100%;
+}
+
+.hr-services {
+    background-color: var(--beige-color);
+    height: 3px;
+    opacity: 0.8;
+    width: 100%;
+    border: none;
+}
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 758px) {
+
+    /* -------------------------------------------- */
+    /* CARTE PRESTATION - TEXTE */
+
+    .service {
+        height: 100%;
+    }
+
+    .main-service {
+        height: auto;
+    }
+
+
+    /* -------------------------------------------- */
+    /* GRANDE IMAGE */
+
+    .service-img {
+        height: 100%;
+    }
+
+
+    /* -------------------------------------------- */
+    /* CARTE PRESTATION - BADGES */
+
+    .time-badge-grid,
+    .price-badge-grid {
+        width: 100%;
+    }
+
+    .time-badge-grid-min,
+    .price-badge-grid-min {
+        width: 100%;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    /* -------------------------------------------- */
+    /* EN-TËTE */
+
+    .service-row {
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
+
+
+    /* -------------------------------------------- */
+    /* GRANDE IMAGE */
+
+    .service-img {
+        height: 100%;
+    }
+
+
+    /* -------------------------------------------- */
+    /* CARTE PRESTATION - BADGES */
+
+    
+    .price {
+        width: auto;
+    }
+
+    
+    .time-badge-grid,
+    .price-badge-grid {
+        width: auto;
+        min-width: 30%;
+    }
+
+    .time-badge-grid-min,
+    .price-badge-grid-min {
+        width: auto;
+        min-width: 30%;
+    }
+}
+
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px) {
+
+    .service-row {
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
+}

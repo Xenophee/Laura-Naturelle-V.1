@@ -1,0 +1,108 @@
+
+
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* STYLE SPECIFIQUE POUR SERVICE EN LIGNE */
+
+
+.services-line-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service-line {
+    border-bottom: var(--border-third-solid);
+}
+
+.service-line-odd {
+    border-bottom: var(--border-light-green-solid);
+}
+
+.service-line p, .service-line-odd p {
+    margin: 0;
+}
+
+.lines-service-div {
+    width: 90%;
+}
+
+.lines-service-div .sideline-title {
+    font-size: 1.7rem;
+}
+
+.lines-service-div .new-service, .lines-service-div .special-service {
+    font-size: 1.2rem;
+}
+
+.badges-div {
+    width: 90%;
+}
+
+.time-badge-line, .price-badge-line {
+    width: 100%;
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 758px) {
+
+    .lines-service-div {
+        width: 60%;
+    }
+
+    .lines-service-div .sideline-title {
+        font-size: 1.5rem;
+    }
+
+    .badges-div {
+        width: 20%;
+        height: 100%;
+    }
+
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    .lines-service-div {
+        width: 55%;
+    }
+
+    .badges-div {
+        width: 35%;
+    }
+
+    .time-badge-line, .price-badge-line {
+        width: auto;
+        min-width: 30%;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px) {
+
+    .lines-service-div {
+        width: 60%;
+    }
+
+    .badges-div {
+        width: 30%;
+    }
+
+}

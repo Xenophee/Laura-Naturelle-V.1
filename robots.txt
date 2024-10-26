@@ -1,0 +1,9 @@
+
+User-agent: *
+
+
+Disallow: /gestion/
+Disallow: /lan-connexion
+Disallow: /informations/
+
+Disallow: /404

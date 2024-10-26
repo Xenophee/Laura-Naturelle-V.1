@@ -1,0 +1,158 @@
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* BOUTONS CLASSIQUES */
+
+.btn {
+    font-size: 1.1rem;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    font-weight: bold;
+    box-shadow: var(--box-light-shadow);
+    transition: 2s;
+}
+
+.btn-classic {
+    background-color: var(--special-dark-color);
+    color: var(--main-color);
+    border: var(--border-light-thin-solid);
+}
+
+.btn-classic:hover {
+    color: var(--main-color);
+    border: var(--border-light-thin-solid);
+}
+
+.btn-classic::before, .btn-outline:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: var(--special-dark-color);
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+    z-index: -1;
+}
+
+.btn-classic:hover::before, .btn-outline:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+
+.btn-outline:hover {
+    color: var(--main-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--special-dark-color);
+    border: var(--border-dark-special-solid);
+}
+
+.btn .bi {
+    font-size: 1rem;
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* BOUTONS DASHBOARD */
+
+.view, .view:hover {
+    color: var(--main-color);
+    border: var(--border-light-solid);
+    background-color: var(--third-color);
+}
+
+.edit, .edit:hover {
+    color: var(--main-color);
+    border: var(--border-light-solid);
+    background-color: var(--special-dark-color);
+}
+
+.delete, .delete:hover {
+    color: var(--main-color);
+    border: var(--border-light-solid);
+    background-color: var(--danger-color);
+}
+
+.validate, .validate:hover {
+    color: var(--main-color);
+    border: var(--border-light-solid);
+    background-color: var(--gold-color);
+}
+
+.deactivate, .deactivate:hover, .activate, .activate:hover {
+    color: var(--second-color);
+    border: var(--border-light-solid);
+    background-color: var(--beige-color);
+}
+
+.view:hover,
+.edit:hover,
+.delete:hover,
+.validate:hover,
+.deactivate:hover {
+    opacity: 0.5;
+}
+
+.view,
+.edit,
+.delete,
+.validate,
+.activate,
+.deactivate {
+    width: 55px;
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px)  {
+
+    .btn-services {
+        width: 100% !important;
+    }
+
+    .btn.btn-classic, .btn-outline {
+        width: 250px;
+    }
+
+    .btn.btn-large {
+        width: 400px;
+    }
+
+    .btn .bi {
+        font-size: 1.2rem;
+    }
+
+    .view, .edit, .delete, .validate, .activate, .deactivate {
+        width: 65px;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    .btn-services {
+        font-size: 1rem;
+    }
+
+    
+
+    .view, .edit, .delete, .validate, .activate, .deactivate {
+        width: 70px;
+    }
+
+}

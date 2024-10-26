@@ -1,0 +1,186 @@
+
+
+
+.dashboard-form {
+    width: 95%;
+}
+
+.form-div {
+    width: 100%;
+}
+
+
+.schedules-form {
+    width: 100%;
+}
+
+.schedule-btn-group {
+    width: 100%;
+}
+
+.schedule-btn-group label {
+    width: 100%;
+}
+
+.schedules {
+    width: 100%;
+    padding: 0;
+}
+
+.schedules {
+    border-bottom: var(--border-beige-thin-solid);
+    list-style: none;
+}
+
+.schedules legend {
+    font-size: 2rem;
+}
+
+.schedule-btn-group label {
+    padding: 15px;
+}
+
+.schedules .form-label {
+    width: 90%;
+    font-family: var(--special-font);
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.schedules .form-control {
+    height: 55px;
+    font-size: 1.5rem;
+}
+
+.schedules-first-bloc span, .schedules-second-bloc span {
+    font-size: 1.3rem;
+}
+
+.announcement-btns {
+    width: 90%;
+}
+
+.formatting {
+    background-color: var(--special-color);
+    color: var(--main-color);
+    border: var(--border-light-thin-solid);
+}
+
+.formatting:hover {
+    background-color: var(--special-dark-color);
+    color: var(--main-color);
+    border: var(--border-light-thin-solid);
+}
+
+.pricing {
+    border-bottom: var(--border-beige-thin-solid);
+}
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px) {
+
+    .dashboard-form {
+        width: 65%;
+    }
+
+    .schedules {
+        width: 90%;
+    }
+
+    .schedule-btn-group label {
+        width: 30%;
+    }
+
+    .schedule-btn-group label {
+        padding: 5px;
+    }
+
+    .schedules .form-label {
+        width: 30%;
+    }
+
+    .schedules .form-control {
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    #announcement-form .announcement {
+        width: 90%;
+    }
+
+    .announcement-btns {
+        width: 80%;
+    }
+
+    .accordion-block {
+        width: 50%;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    .dashboard-form {
+        width: 70%;
+    }
+
+    .schedules {
+        width: 95%;
+    }
+
+    .schedules .form-label {
+        width: 20%;
+        font-size: 1.5rem;
+    }
+
+    .schedules .form-control {
+        width: 20%;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .schedules-first-bloc span, .schedules-second-bloc span {
+        font-size: 1.2rem;
+    }
+
+    .announcement-btns {
+        width: 70%;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px) {
+
+    .dashboard-form {
+        width: 50%;
+    }
+
+    .schedules {
+        width: 70%;
+    }
+
+    .schedules .form-label {
+        width: 20%;
+        font-size: 1.7rem;
+    }
+
+    .schedules .form-control {
+        width: 20%;
+    }
+
+    .announcement-btns {
+        width: 70%;
+    }
+}

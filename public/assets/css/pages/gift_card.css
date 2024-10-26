@@ -1,0 +1,48 @@
+
+
+.gift-card {
+    transform: rotate(-15deg);
+    width: 85%;
+    box-shadow: var(--box-light-shadow);
+}
+
+
+.btn-group-gift-card {
+    width: 100%;
+}
+
+.btn-group-gift-card .btn-radio{
+    width: 50%;
+}
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px) {
+
+    .gift-card {
+        width: 60%;
+    }
+
+    .btn-group-gift-card {
+        width: 85%;
+    }    
+
+}
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    .gift-card {
+        width: 70%;
+    }
+
+    .btn-group-gift-card {
+        width: 70%;
+    }    
+
+}

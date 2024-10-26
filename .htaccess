@@ -1,0 +1,32 @@
+RewriteEngine On
+
+RewriteRule ^accueil$ /controllers/home_controller.php [L]
+RewriteRule ^prestations$ /controllers/services_categories_controller.php [L]
+RewriteRule ^prestations/([^/]+)$ /controllers/services_controller.php [L]
+RewriteRule ^cartes-cadeaux$ /controllers/gift_card_controller.php [L]
+RewriteRule ^contact$ /controllers/contact_controller.php [L]
+
+RewriteRule ^informations/mentions-legales$ /controllers/informations/legal_notice_controller.php [L]
+RewriteRule ^informations/politique-de-confidentialite$ /controllers//informations/privacy_policy_controller.php [L]
+RewriteRule ^informations/conditions-generales-de-vente$ /controllers//informations/sales_terms_controller.php [L]
+
+RewriteRule ^gestion/mon-compte$ /controllers/dashboard/account_controller.php [L]
+RewriteRule ^gestion/mes-horaires$ /controllers/dashboard/schedules_controller.php [L]
+RewriteRule ^gestion/mes-annonces$ /controllers/dashboard/announcement_controller.php [L]
+RewriteRule ^gestion/liste-des-prestations$ /controllers/dashboard/services_list_controller.php [L]
+RewriteRule ^gestion/liste-des-promotions$ /controllers/dashboard/discounts_list_controller.php [L]
+RewriteRule ^gestion/(ajouter|modifier)-une-promotion$ /controllers/dashboard/discount_manager_controller.php [L]
+RewriteRule ^gestion/(ajouter|modifier)-une-categorie$ /controllers/dashboard/category_manager_controller.php [L]
+RewriteRule ^gestion/(ajouter|modifier)-une-prestation$ /controllers/dashboard/service_manager_controller.php [L]
+RewriteRule ^lan-connexion$ /controllers/dashboard/lan_admin_controller.php [L]
+RewriteRule ^gestion/deconnexion$ /controllers/dashboard/sign_out_controller.php [L]
+
+
+RewriteRule ^gestion/publication$ /controllers/dashboard/publish_controller.php [L]
+RewriteRule ^gestion/activation$ /controllers/dashboard/activate_controller.php [L]
+RewriteRule ^gestion/desactivation$ /controllers/dashboard/deactivate_controller.php [L]
+RewriteRule ^gestion/suppression$ /controllers/dashboard/delete_controller.php [L]
+
+RewriteRule ^404$ /404.php [L]
+
+ErrorDocument 404 /404.php

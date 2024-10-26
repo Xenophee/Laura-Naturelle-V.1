@@ -1,0 +1,19 @@
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* PAGINATION */
+
+.page-link {
+    background-color: var(--special-color);
+    color: var(--main-color);
+}
+
+.page-link:hover {
+    background-color: var(--special-dark-color);
+    color: var(--main-color);
+}
+
+.page-link.active {
+    background-color: var(--special-dark-color);
+    border: var(--border-light-thin-solid);
+    color: var(--main-color);
+}

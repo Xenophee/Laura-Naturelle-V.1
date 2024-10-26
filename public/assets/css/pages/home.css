@@ -1,0 +1,374 @@
+
+.split-index {
+    position: relative;
+    width: 100%;
+}
+
+.split-index::before {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 30%;
+    top: -30%;
+    left: 20%;
+    background-color: var(--special-dark-color);
+    transform: translate(-50%, -50%);
+}
+
+.split-index::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 30%;
+    top: -30%;
+    left: 80%;
+    background-color: var(--special-dark-color);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* PRESENTATION */
+
+.carousel-control-next {
+    right: -15%;
+}
+
+.carousel-control-prev {
+    left: -15%;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carousel-indicators {
+    bottom: -10%;
+}
+
+.presentation-text {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.presentation-text p {
+    width: 90%;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.presentation-text img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* PARTIE PRESTATIONS */
+
+.services-index-img {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    border-top: var(--border-light-thin-solid);
+    border-bottom: var(--border-light-thin-solid);
+    transition: opacity 1s ease-in-out;
+}
+
+.services-index-img.change-animation {
+    animation: fadeInOut 2s ease-in-out;
+}
+
+.prestations-index {
+    height: 750px;
+    position: relative;
+    background-image: url(../../img/backgrounds/bois.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prestations-div-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.prestations-text-index {
+    position: absolute;
+    font-size: 1rem;
+    width: 80%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(35px);
+    color: var(--first-color);
+    transition: 2s;
+}
+
+.prestations-text-index.lightmode {
+    color: var(--main-color);
+}
+
+.btn-services-index {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 50%;
+    width: 90%;
+    background-color: transparent;
+    color: var(--first-color);
+    border: var(--border-first-solid);
+}
+
+.btn-services-index.lightmode {
+    color: var(--main-color);
+    border: var(--border-light-solid);
+}
+
+.btn-services-index:hover {
+    color: var(--main-color);
+    border: var(--border-light-solid);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* PARTIE FIDELITE */
+
+.fidelity-img {
+    transform: rotate(-15deg);
+    width: 85%;
+    box-shadow: var(--box-light-shadow);
+}
+
+.fidelity-text {
+    font-size: 1.1rem;
+    line-height: 3rem;
+}
+
+.fidelity-text span {
+    font-size: 2rem;
+    color: var(--special-dark-color);
+}
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* ENDROIT / HORAIRES */
+
+
+#map {
+    height: 70vh;
+    width: 100%;
+    border: var(--border-brown-thin-solid);
+    box-shadow: var(--box-light-shadow);
+}
+
+.scheduleBoard {
+    background-image: url(../../img/backgrounds/bois.webp);
+    background-size: cover;
+    color: var(--special-dark-color);
+    font-size: 1.2rem;
+    border: var(--border-brown-thin-solid);
+    box-shadow: var(--box-light-shadow);
+    /* text-shadow: var(--text-shadow); */
+    width: 100%;
+}
+
+.scheduleBoard h3 {
+    font-size: 2.5rem;
+}
+
+.scheduleBoard ul {
+    padding: 0;
+    list-style: none;
+}
+
+.informations h3 {
+    width: 100%;
+    background-image: url(../../img/backgrounds/bois.webp);
+    background-size: cover;
+    border: var(--border-brown-thin-solid);
+    font-size: 2rem;
+    color: var(--special-dark-color);
+    box-shadow: var(--box-light-shadow);
+    /* text-shadow: var(--text-shadow); */
+}
+
+.informations p, .informations a {
+    color: var(--first-color);
+    font-size: 1.2rem;
+}
+
+.informations a:hover {
+    color: var(--first-color);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px)  {
+
+    .presentation-text img {
+        width: 500px;
+    }
+
+    .presentation-text p {
+        width: 80%;
+    }
+
+    .carousel {
+        width: 70%;
+    }
+
+    .carousel-item img {
+        height: 700px;
+    }
+
+    /* ------------------------------------------------- */
+
+    .prestations-text-index {
+        font-size: 1.2rem;
+        width: 45%;
+        top: 50%;
+        left: 30%;
+    }
+
+    .btn-services-index {
+        top: 50%;
+        left: 75%;
+        width: 250px;
+    }
+
+    /* ------------------------------------------------- */
+
+    .fidelity-img {
+        width: 65%;
+    }
+
+    /* ------------------------------------------------- */
+
+    #map {
+        height: 40vh;
+        width: 90%;
+    }
+
+    .informations h3 {
+        width: 70%;
+    }
+
+    .informations div:first-child {
+        border-right: var(--border-first-thin-solid);
+    }
+
+    .scheduleBoard {
+        width: 50%;
+    }
+
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px)  {
+
+    .presentation-text img {
+        width: 700px;
+    }
+
+    .carousel {
+        width: 75%;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    /* ------------------------------------------------- */
+
+    .prestations-text-index {
+        font-size: 1.2rem;
+        width: 30%;
+        top: 50%;
+        left: 25%;
+    }
+    
+    .btn-services-index {
+        top: 50%;
+        left: 70%;
+    }
+
+    /* ------------------------------------------------- */
+
+    .fidelity-img {
+        width: 80%;
+    }
+
+    /* ------------------------------------------------- */
+
+    #map {
+        height: 65vh;
+    }
+
+    .scheduleBoard {
+        width: 80%;
+    }
+
+    .informations div:last-child {
+        border-left: var(--border-first-thin-solid);
+    }
+
+}
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px)  {
+
+    /* .presentation-text {
+        width: 60%;
+    } */
+
+    .carousel {
+        width: 90%;
+    }
+
+    .carousel-item img {
+        height: 700px;
+    }
+
+    .fidelity-img {
+        width: 85%;
+    }
+
+    #map {
+        height: 50vh;
+    }
+
+}

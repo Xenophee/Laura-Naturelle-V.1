@@ -1,0 +1,46 @@
+
+
+.modal-content {
+    background-color: var(--main-color);
+    border: var(--border-special-thin-solid);
+}
+
+.modal-header {
+    border-bottom: var(--border-special-thin-solid);
+}
+
+.modal-footer {
+    border-top: var(--border-special-thin-solid);
+}
+
+.modal-title {
+    padding: 0;
+    letter-spacing: normal;
+}
+
+.modal-body p {
+    margin: 0;
+}
+
+
+
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+
+    .modal-footer .btn-classic,  .modal-footer .btn-outline {
+        width: 150px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    
+
+}

@@ -1,0 +1,139 @@
+
+
+.table-responsive {
+    width: 100%;
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 4px;
+}
+
+tr {
+    min-height: 60px;
+}
+
+.table-description {
+    min-width: 200px;
+}
+
+table h2 {
+    margin: 0;
+}
+
+.table-hover-green th {
+    color: var(--first-color);
+}
+
+.table-hover-green tr:not(thead tr) {
+    border: var(--first-color);
+}
+
+.table-group-divider {
+    border-top: var(--border-second-medium-solid);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--second-filter-color);
+}
+
+
+/* ---------------------------------------- */
+/* Tableau en attente de publication */
+
+.table-hover-brown .table-group-divider {
+    border-top: var(--border-brown-medium-solid);
+}
+
+.table-hover-brown tr:not(thead tr) {
+    border-bottom: var(--border-brown-thin-solid);
+}
+
+.table-hover-brown th {
+    color: var(--brown-color);
+}
+
+
+/* ---------------------------------------- */
+/* Tableau hover */
+
+.table-hover-green > tbody > tr:hover > * {
+    background-color: var(--second-filter-color);
+}
+
+.table-hover-brown > tbody > tr:hover > * {
+    background-color: var(--brown-filter-color);
+}
+
+
+/* ---------------------------------------- */
+/* Ligne de tableau archivé et en attente */
+
+.deactivated {
+    background-color: var(--beige-color) !important;
+}
+
+.shelved {
+    background-color: var(--second-filter-color) !important;
+}
+
+
+/* ---------------------------------------- */
+/* Badges du tableau */
+
+td .bi {
+    font-size: 1.2rem;
+}
+
+.table-badge-green {
+    width: 140px;
+    color: var(--main-color);
+    background-color: var(--first-color);
+}
+
+.table-badge-beige {
+    min-width: 100px;
+    color: var(--first-color);
+    background-color: var(--beige-color);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px) {
+
+    .table-responsive {
+        width: 90%;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    .table-responsive {
+        width: 95%;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px) {
+
+    .table-responsive {
+        width: 80%;
+    }
+
+    .table-badge-beige {
+        min-width: 50px;
+    }
+}

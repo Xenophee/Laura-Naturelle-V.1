@@ -1,0 +1,268 @@
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* GÉNÉRAL */
+
+
+body {
+    color: var(--main-dark-color);
+    font-family: var(--main-font);
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--special-font);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* H1 */
+
+h1 {
+    color: var(--special-dark-color);
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    letter-spacing: 5px;
+    word-wrap: break-word;
+    z-index: 2;
+    /* line-height: 15vh; */
+}
+
+.main-title {
+    background-color: var(--main-filter-color-op);
+    min-height: 45vh;
+}
+
+.background-title {
+    position: relative;
+    background-image: url(../../img/backgrounds/home.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: var(--inset-shadow);
+}
+
+.background-title img {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+}
+
+@media (orientation: portrait) {
+    .background-title img {
+        display: none;
+    }
+}
+
+
+h1 span:first-child {
+    font-size: 3rem;
+}
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* H2 */
+
+.category-title {
+    position: relative;
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    left: 50%;
+    top: 100%;
+    height: 5px;
+    background-color: var(--beige-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* H3, H4 */
+
+.underline-title, .sideline-title, .subtitle {
+    position: relative;
+    color: var(--second-color);
+}
+
+.underline-title::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    left: 0%;
+    top: 100%;
+    background-color: var(--second-color);
+}
+
+.sideline-title::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: -10px;
+    top: 0%;
+    background-color: var(--brown-color);
+}
+
+.subtitle {
+    font-size: 2.2rem;
+}
+
+.subtitle::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 75%;
+    left: 50%;
+    top: 105%;
+    height: 5px;
+    background-color: var(--beige-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* SPÉCIFIQUE */
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-green {
+    color: var(--second-color);
+}
+
+.text-gold {
+    color: var(--gold-color);
+}
+
+.text-brown {
+    color: var(--brown-color);
+}
+
+.text-pink {
+    color: var(--special-dark-color);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 15px;
+    }
+
+    .main-title {
+        min-height: 25vh;
+    }
+
+    .background-title {
+        background-image: url(../../img/backgrounds/home-xl.webp);
+    }
+
+    .background-title img {
+        width: 40%;
+        left: 25%;
+        top: 50%;
+    }
+
+    .category-title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle::after {
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .main-title {
+        min-height: 40vh;
+    }
+
+    .background-title img {
+        width: 15%;
+        left: 90%;
+        top: 50%;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    h1 {
+        font-size: 5.2rem;
+    }
+
+    .main-title {
+        background-color: var(--main-filter-color);
+        min-height: 65vh;
+    }
+
+    .background-title img {
+        left: 90%;
+        top: 50%;
+        width: 15%;
+    }
+
+    .subtitle::after {
+        width: 30%;
+    }
+}
+
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px) {
+
+    .background-title img {
+        left: 90%;
+        top: 50%;
+    }
+
+    h1 span {
+        font-size: 7rem;
+    }
+}

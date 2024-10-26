@@ -1,0 +1,27 @@
+.appointment-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.book-div {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+
+    .appointment-img {
+        height: 20vh;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .appointment-img {
+        height: auto;
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+    }
+
+}
