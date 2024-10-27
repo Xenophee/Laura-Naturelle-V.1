@@ -1,0 +1,188 @@
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* NAVIGATION PRINCIPALE */
+
+
+.mainNav {
+    font-family: var(--special-font);
+    background-color: var(--special-dark-color);
+    border-bottom: var(--border-special-medium-solid);
+    font-weight: normal;
+}
+
+
+/* ------------------------------------------------- */
+/* navbar-brand */
+
+.navbar-brand {
+    color: var(--main-color);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.navbar-brand:hover {
+    color: var(--main-color) !important;
+}
+
+.navbar-brand img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+
+/* ------------------------------------------------- */
+/* nav-link */
+
+.mainNav .nav-link {
+    position: relative;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+.mainNav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.mainNav .nav-link.active, .drop-menu.active {
+    color: var(--main-color);
+    border-bottom: var(--border-light-thin-solid);
+}
+
+
+/* ------------------------------------------------- */
+/* special nav-link */
+
+.dashboardLink {
+    border: var(--border-light-thin-solid);
+    outline: var(--border-light-thin-solid);
+    outline-offset: 7px;
+    transition: 1s;
+}
+
+.dashboardLink.active {
+    background-color: var(--main-color);
+    color: var(--special-dark-color) !important;
+}
+
+/* ------------------------------------------------- */
+/* dropdown */
+
+.drop-links {
+    background-color: var(--main-filter-color-op);
+}
+
+.drop-links a {
+    display: block;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    color: var(--special-dark-color);
+}
+
+.drop-links a.active {
+    background-color: var(--special-color);
+    border-top: var(--border-light-thin-solid);
+    border-bottom: var(--border-light-thin-solid);
+}
+
+.drop-links li {
+    list-style: disc;
+    font-size: 1.2rem;
+    color: var(--special-dark-color);
+}
+
+
+/* ------------------------------------------------- */
+/* autres */
+
+.offcanvasColor {
+    background-color: var(--special-dark-color);
+    color: var(--main-color);
+}
+
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+@media (min-width: 1200px) {
+
+    .navbar-brand {
+        color: var(--main-color);
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand:hover {
+        color: var(--second-color);
+    }
+
+    .navbar-brand img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .mainNav .nav-link {
+        font-size: 1.2rem;
+        color: var(--main-color);
+    }
+
+    .header-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -0.3px;
+        width: 100%;
+        height: 2px;
+        background: var(--main-color);
+        transform: scaleX(0);
+        transition: .5s;
+    }
+
+    .header-link:hover::after {
+        transform: scaleX(1);
+    }
+
+    /* --------------------------------------------------------- */
+
+    .drop-menu {
+        position: relative;
+    }
+
+    .drop-menu:hover .drop-links {
+        opacity: 1;
+    }
+
+    .drop-links li:hover {
+        background-color: var(--special-dark-color);
+        color: var(--main-color);
+        border-top: var(--border-light-thin-solid);
+        border-bottom: var(--border-light-thin-solid);
+        box-shadow: var(--inset-light-shadow);
+    }
+
+    .drop-links {
+        background-color: var(--special-dark-color);
+        border: var(--border-special-medium-solid);
+        width: 200px;
+        position: absolute;
+        top: 150%;
+        z-index: 10;
+        padding: 0;
+        opacity: 0;
+        transition: opacity 0.7s ease-in-out;
+    }
+
+    .drop-links a {
+        color: var(--main-color);
+    }
+    
+    .drop-links li {
+        font-size: 1rem;
+        list-style: none;
+    }
+
+    /* --------------------------------------------------------- */
+}

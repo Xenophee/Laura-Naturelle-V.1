@@ -1,0 +1,112 @@
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* BANDEROLE DE PROMOTIONS */
+
+.announcement {
+    background-image: url(../../img/backgrounds/bois.webp);
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+
+.announcement-icon::before {
+    font-size: 3rem;
+    color: var(--main-color);
+    text-shadow: var(--text-shadow);
+}
+
+.announcement p {
+    font-size: 1.2rem;
+    color: var(--first-color);
+    /* text-shadow: var(--text-shadow); */
+}
+
+.announcement span {
+    font-size: 2rem;
+    color: var(--first-color);
+    margin: 0px 25px 0px 25px;
+    /* text-shadow: 1px 0 #fdf3fd, -1px 0 #fdf3fd, 0 1px #fdf3fd, 0 -1px #fdf3fd, 1px 1px #fdf3fd, -1px -1px #fdf3fd, 1px -1px #fdf3fd, -1px 1px #fdf3fd; */
+}
+
+.announcement {
+    font-size: 1.2rem;
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px)  {
+
+    /* ------------------------------------------------- */
+
+    .announcement-icon::before {
+        font-size: 3.5rem;
+    }
+
+    .announcement p {
+        font-size: 1.2rem;
+    }
+    
+    .announcement span {
+        font-size: 2.3rem;
+    }
+
+    /* ------------------------------------------------- */
+
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    /* ------------------------------------------------- */
+
+    .announcement-icon::before  {
+        font-size: 3.5rem;
+    }
+
+    .announcement p {
+        font-size: 1.5rem;
+    }
+    
+    .announcement span {
+        font-size: 3rem;
+    }
+
+    /* ------------------------------------------------- */
+
+}
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px) {
+
+    /* ------------------------------------------------- */
+
+    .announcement-icon::before  {
+        font-size: 5rem;
+    }
+
+    .announcement p {
+        font-size: 1.8rem;
+    }
+    
+    .announcement span {
+        font-size: 4rem;
+    }
+
+    /* ------------------------------------------------- */
+
+}

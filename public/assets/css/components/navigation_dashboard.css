@@ -1,0 +1,123 @@
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* NAVIGATION DASHBOARD */
+
+
+.dashboard-nav {
+    background-image: url(../../img/backgrounds/bois.webp);
+    font-family: var(--special-font);
+    color: var(--first-color);
+}
+
+.dashboard-nav .navbar-toggler {
+    border-color: var(--first-color);
+}
+
+.dashboard-nav .navbar-toggler-icon {
+    background-image: url(../../img/icons/hamburger.webp);
+}
+
+.dashboard-nav .navbar-toggler:focus {
+    box-shadow: rgba(11, 87, 23, 0.16) 0px 1px 4px, rgb(7, 102, 7) 0px 0px 0px 3px;
+}
+
+.links-container, .dashboard-nav ul {
+    width: 100%;
+}
+
+
+/* -------------------------------------------- */
+/* TITRES */
+
+.navbar-title {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.navbar-title::after {
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 3px;
+    background-color: var(--first-color);
+    top: 100%;
+    left: 0%;
+}
+
+
+/* -------------------------------------------- */
+/* LIENS */
+
+.dashboard-nav .nav-link {
+    position: relative;
+    color: var(--first-color);
+    font-weight: bold;
+    z-index: 0;
+}
+
+.dashboard-nav .nav-link.active {
+    color: var(--first-color);
+    background-color: var(--main-color);
+}
+
+.dashboard-nav .nav-link::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    color: var(--first-color);
+    background-color: var(--main-color);
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.dashboard-nav .nav-link:hover::after {
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    color: var(--main-color);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+
+/* -------------------------------------------- */
+/* TABLETTE */
+
+@media (min-width: 768px) {
+
+    .dashboard-nav ul {
+        width: 40%;
+    }
+
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    .dashboard-nav ul {
+        width: 20%;
+    }
+
+}
+
+
+/* -------------------------------------------- */
+/* TRES GRAND ECRAN */
+
+@media (min-width: 1400px) {
+
+    .dashboard-nav ul {
+        width: 100%;
+    }
+
+}

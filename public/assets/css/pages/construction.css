@@ -1,0 +1,46 @@
+
+
+#lottieContainer {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.backLottie {
+    width: 90%;
+    height: 30vh;
+    background-image: url(../../img/backgrounds/bois3.jpg);
+    border: var(--border-special-strong-solid);
+    box-shadow: var(--inset-shadow);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+@media (min-width: 768px)  {
+    #lottieContainer {
+        height: 100%;
+        width: 95%;
+    }
+    
+    .backLottie {
+        width: 70%;
+        height: 30vh;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    #lottieContainer {
+        height: 100%;
+        width: 95%;
+    }
+    
+    .backLottie {
+        width: 40%;
+        height: 50vh;
+    }
+}

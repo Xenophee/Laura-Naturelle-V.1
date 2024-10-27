@@ -1,0 +1,144 @@
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* STYLE GLOBALE A SERVICE */
+
+/* -------------------------------------------- */
+/* EN-TËTE */
+
+.service-text {
+    font-size: 1.2rem;
+    /* position: relative; */
+}
+
+/* -------------------------------------------- */
+
+.gender-nav {
+    border-bottom: var(--special-dark-color) 5px solid;
+}
+
+.gender-category {
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    color: var(--second-color);
+    margin: 0;
+}
+
+.gender-category.active {
+    background-color: var(--special-dark-color);
+    color: var(--main-color);
+    box-shadow: 0 -5px 5px -5px #e768993d;
+}
+
+/* ===================================================================================================== */
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* GENDER BADGE */
+
+.exclusively {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.bagde-line-background-before {
+    width: 30%;
+    height: 50px;
+}
+
+.bagde-line-background-after {
+    width: 30%;
+    height: 50px;
+}
+
+
+/* --female-badge-- */
+
+.female-badge-service .exclusively {
+    border: var(--border-dark-special-solid);
+}
+
+.female-badge-service .bagde-line-background-before, .female-badge-service .bagde-line-background-after {
+    background-color: var(--special-dark-filter);
+}
+
+/* --male-badge-- */
+
+.male-badge-service .exclusively {
+    border: var(--border-third-solid);
+}
+
+.male-badge-service .bagde-line-background-before, .male-badge-service .bagde-line-background-after {
+    background-color: var(--second-filter-color);
+}
+
+
+/* ===================================================================================================== */
+/* ----------------------------------------------------------------------------------------------------- */
+/* SECTIONS COLOR */
+
+.classic-section {
+    background-color: var(--second-filter-color);
+}
+
+.package-section {
+    background-color: var(--brown-filter-color);
+}
+
+.special-section {
+    background-color: var(--special-dark-filter);
+}
+
+.special-section .service, .classic-section .service, .package-section .service {
+    background-color: var(--main-color);
+}
+
+.classic-section .service {
+    border: var(--border-third-solid);
+}
+
+.special-section .service {
+    border: var(--border-dark-special-solid);
+}
+
+.package-section .service {
+    border: var(--border-brown-solid);
+}
+
+.price {
+    background-color: var(--light-green);
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.time {
+    background-image: url(../../img/backgrounds/badge.webp);
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    height: 35px;
+    border-radius: 5px;
+}
+
+
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 750px) {
+
+    .service-text {
+        font-size: 1.4rem;
+    }
+
+    .gender-category {
+        width: 35%;
+    }
+}

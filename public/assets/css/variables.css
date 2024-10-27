@@ -1,0 +1,71 @@
+:root {
+
+    --main-color: #ffffff;
+    --main-dark-color: #212529;
+
+    --light-green:#c2ddad;
+    --first-color: #3f7715;
+    --second-color: #2f5b0e;
+    --third-color: #6fa348;
+
+    --brown-color: #c08552;
+    --beige-color: #ede7db;
+    --gold-color: #e3b04c;
+    
+    --special-color: #f1a2da;
+    --special-dark-color: #e76899;
+
+    --danger-color: #b2161a;
+    --danger-filter-color: #b2161b1a;
+
+    --main-filter-color-op: #fdf3fdbb;
+    --main-filter-color: #fdf3fd98;
+    --second-filter-color: #2f5b0e28;
+    --brown-filter-color: #c0855248;
+    /* --brown-filter-color: #c0855248; */
+    --special-dark-filter: #e768993d;
+    --gold-filter-color: #e3b14c94;
+
+    --border-filter-special-thin-solid: var(--special-dark-filter) 1px solid;
+    --border-filter-second-thin-solid: var(--second-filter-color) 1px solid;
+    --border-filter-brown-thin-solid: var(--brown-filter-color) 1px solid;
+
+    --special-font: 'Petrona', serif;
+    --main-font: 'Lato', sans-serif;
+
+    --border-light-green-solid: var(--light-green) 2px solid;
+
+    --border-light-thin-solid: var(--main-color) 1px solid;
+    --border-light-solid: var(--main-color) 2px solid;
+    
+    --border-second-medium-solid: var(--second-color) 3px solid;
+
+    --border-third-solid: var(--third-color) 2px solid;
+
+    --border-beige-thin-solid: var(--beige-color) 1px solid;
+
+    --border-brown-thin-solid: var(--brown-color) 1px solid;
+    --border-brown-solid: var(--brown-color) 2px solid;
+    --border-brown-medium-solid: var(--brown-color) 3px solid;
+
+    --border-special-thin-solid: var(--special-color) 1px solid;
+    --border-special-medium-solid: var(--special-color) 3px solid;
+    --border-special-strong-solid: var(--special-color) 10px solid; /* A supprimer après la page de construction */
+
+    --border-dark-special-thin-solid: var(--special-dark-color) 1px solid;
+    --border-dark-special-solid: var(--special-dark-color) 2px solid;
+    --border-special-dark-strong-solid: var(--special-dark-color) 10px solid;
+
+    --border-first-thin-solid: var(--first-color) 1px solid;
+    --border-first-solid: var(--first-color) 2px solid;
+
+    --border-error-solid: var(--danger-color) 2px solid;
+
+    /* --box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    --box-light-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    --inset-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    --inset-light-shadow: rgba(195, 195, 218, 0.25) 0px 10px 30px -12px inset, rgba(195, 195, 218, 0.25) 0px 10px 20px -10px inset;
+
+    --text-shadow: 1px 1px 4px #3B3939;
+    /* --text-light-shadow: 1px 1px 4px #fdf3fd; */
+}

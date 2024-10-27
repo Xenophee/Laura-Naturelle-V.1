@@ -1,0 +1,57 @@
+
+
+.logos-product, .logos-brand {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.logos-product img {
+    height: 40px;
+    width: 40px;
+}
+
+.logos-brand img {
+    width: 100px;
+}
+
+.min-logos {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+/* -------------------------------------------- */
+/* TABLETTES */
+
+@media (min-width: 758px) {
+
+    .logos-product img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .logos-brand img {
+        width: 100px;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* GRAND ECRAN */
+
+@media (min-width: 1200px) {
+
+    .logos-product img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .logos-brand img {
+        width:150px;
+    }
+}

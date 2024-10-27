@@ -1,0 +1,149 @@
+
+.bg-form {
+    border: var(--border-first-thin-solid);
+}
+
+.bg-form img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+legend {
+    background-image: url(../../img/backgrounds/legend.webp);
+    font-family: var(--special-font);
+    font-size: 1.7rem;
+    color: var(--first-color);
+    border: var(--border-light-thin-solid);
+    box-shadow: var(--box-light-shadow);
+}
+
+fieldset {
+    height: 100%;
+}
+
+.cover {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border: var(--border-special-thin-solid);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* SPÉCIFIQUE */
+
+.form-select {
+    background-image: url(../../img/icons/down.webp);
+}
+
+.form-control, .form-select {
+    box-shadow: inset 0 0 10px #cac7c6;
+    border: var(--border-special-thin-solid);
+    height: 55px;
+}
+
+.textarea {
+    height: 250px;
+}
+
+.form-control:focus, .form-select:focus {
+    border: var(--border-dark-special-solid);
+    box-shadow: none;
+}
+
+.form-check-input {
+    border: var(--border-special-thin-solid);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0;
+}
+
+.form-check-input:checked {
+    background-color: var(--special-dark-color);
+    box-shadow: #fb8bdb 0 0 4px;
+    border: var(--border-special-thin-solid);
+}
+
+.form-check-input:focus {
+    box-shadow: #fb8bdb 0 0 4px;
+    border: var(--border-special-thin-solid);
+}
+
+.forgotten {
+    color: var(--special-color);
+    text-decoration: underline;
+    transition: 0.7s;
+}
+
+.forgotten:hover {
+    color: var(--special-dark-color);
+}
+
+
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* GROUP-RADIO */
+
+.btn-group label {
+    border-radius: 0;
+}
+
+.btn-radio {
+    color: var(--special-dark-color);
+    border: var(--border-dark-special-solid);
+}
+
+.btn-radio:hover {
+    color: var(--special-dark-color);
+    border: var(--border-dark-special-solid);
+}
+
+.btn-check + .btn:hover {
+    color: var(--special-dark-color);
+    background-color: var(--bs-btn-bg);
+    border: var(--border-dark-special-solid);
+}
+
+.btn-check:checked + .btn {
+    color: var(--main-color);
+    background-color: var(--special-dark-color);
+    border: var(--border-dark-special-solid);
+}
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* AUTRE */
+
+.error-form, .error-form:focus {
+    border: var(--border-error-solid);
+    background-color: var(--danger-filter-color);
+}
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+@media (min-width: 768px)  {
+
+    .btn-group label {
+        border-radius: 10px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,104 @@
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* IMPORT PRIORITAIRE */
+
+@import url('./variables.css');
+@import url('./others/text.css');
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* IMPORT POUR LES COMPOSANTS */
+
+@import url('./components/accordion.css');
+@import url('./components/buttons.css');
+@import url('./components/form.css');
+@import url('./components/footer.css');
+@import url('./components/logos.css');
+@import url('./components/modal.css');
+@import url('./components/navigation_dashboard.css');
+@import url('./components/navigation.css');
+@import url('./components/others.css');
+@import url('./components/pagination.css');
+@import url('./components/streamer.css');
+@import url('./components/table.css');
+
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* IMPORT POUR LES PAGES */
+
+/* @import url('./pages/account.css'); */
+@import url('./pages/appointment.css');
+@import url('./pages/dashboard.css');
+@import url('./pages/gift_card.css');
+@import url('./pages/home.css');
+@import url('./pages/notice.css');
+@import url('./pages/services.css');
+@import url('./pages/services_grid.css');
+@import url('./pages/services_lines.css');
+@import url('./pages/construction.css');
+@import url('./pages/services_categories.css');
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* IMPORT ANNEXE */
+
+@import url('./others/keyframes.css');
+
+
+/* ================================================================================================================================= */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* AUTRE */
+
+body {
+    background-color: var(--main-color);
+    padding: 0;
+    margin: 0;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.bg-green {
+    background-color: var(--first-color);
+    color: var(--main-color);
+}
+
+.bg-filter-green {
+    background-color: var(--second-filter-color);
+    color: var(--first-color);
+}
+
+.bg-brown {
+    background-color: var(--brown-color);
+    color: var(--main-color);
+}
+
+.bg-filter-brown {
+    background-color: var(--brown-filter-color);
+    color: var(--brown-color);
+}
+
+.bg-filter-pink {
+    background-color: var(--special-dark-filter);
+    color: var(--special-dark-color);
+}
+
+.bg-dark-pink {
+    background-color: var(--special-dark-color);
+    color: var(--main-color);
+}
+
+::-webkit-scrollbar {
+    width: 0.7em;
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--special-dark-color);
+}
+

@@ -1,0 +1,17 @@
+
+
+.notice-title {
+    position: relative;
+    color: var(--first-color);
+}
+
+.notice-title::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 45%;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--first-color);
+}
